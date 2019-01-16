@@ -1,5 +1,7 @@
 # Drop mem caches tool
 ![avatar](low_free_mem.png)
+
+
 Look at the picture above.It out of free memory because 3715M memory was buff/caches.
 It cause the system to slow down,then i need to drop mem caches.
 ## 1.Create logs directory
