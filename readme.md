@@ -21,4 +21,6 @@ Modify your file directory,then excute shell
  service cron restart
 ```
 **Have Fun!**
+
+
 ![avatar](drop_cache_log.png)
