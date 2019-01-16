@@ -3,7 +3,7 @@ import logging
 import time
 
 low_mem=500
-logging.basicConfig(filename='logs/drop_caches_tool.log', level=logging.INFO)
+logging.basicConfig(filename='../logs/drop_caches_tool.log', level=logging.INFO)
 console = logging.StreamHandler()
 console.setLevel(logging.INFO)
 logging.getLogger('').addHandler(console)
