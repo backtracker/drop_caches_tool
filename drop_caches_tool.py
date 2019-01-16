@@ -21,7 +21,6 @@ def execute_shell(shell):
     out, err = process.communicate()
     errcode = process.returncode
     out_str = out.decode("utf-8")
-    #log.info(out_str)
     return out_str
 
 if __name__ == "__main__":
@@ -30,7 +29,7 @@ if __name__ == "__main__":
     drop_mem_caches_shell="sync;echo 3 > /proc/sys/vm/drop_caches"
     current_free_mem = int(execute_shell(get_free_mem_shell))
     log.info("Current free mem : "+str(current_free_mem)+"M")
-    if int(current_free_mem) < low_mem:
+    if current_free_mem < low_mem:
         log.info("Current free mem < "+str(low_mem)+"M，starting drop mem caches...")
         execute_shell(drop_mem_caches_shell)
     else:

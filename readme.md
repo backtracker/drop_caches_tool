@@ -1,11 +1,13 @@
-**Drop mem caches tool**
-
-**1.set low_mem value**
+#Drop mem caches tool
+![avatar](low_free_mem.png)
+Look at the picture above.It out of free memory because 3715M memory was buff/caches.
+It cause the system to slow down,then i need to drop mem caches.
+##1.set low_mem value
 
   The default Settings is 500M。It means if current free mem lower than this value,it will
   drop mem caches.
  
-**2.config crontab file**
+##2.config crontab file
 ```jshelllanguage
 */5  *	* * *	root	cd /usr/local/bin/drop_caches_tool ; python3 drop_caches_tool.py
 ```
