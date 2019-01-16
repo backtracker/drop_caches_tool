@@ -1,4 +1,4 @@
-#Drop mem caches tool
+# Drop mem caches tool
 ![avatar](low_free_mem.png)
 Look at the picture above.It out of free memory because 3715M memory was buff/caches.
 It cause the system to slow down,then i need to drop mem caches.
@@ -20,3 +20,5 @@ Modify your file directory,then excute shell
  service cron reload
  service cron restart
 ```
+**Have Fun!**
+![avatar](drop_cache_log.png)
